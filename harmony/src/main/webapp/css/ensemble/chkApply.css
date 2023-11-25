@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+.single_chk_span:hover{
+    cursor : pointer;
+    color:rgb(250, 112, 61);
+    font-weight: bold;
+}
+
+
+.selected{
+	color : orange;
+	font-weight : bold;
+}
+
+
+/*span{
+    cursor : pointer;
+    background-color: rgb(218, 106, 65);
+    width: 100px;
+    height: 40px;
+    border: none;
+    color:white;
+    border-radius: 10%;
+}*/

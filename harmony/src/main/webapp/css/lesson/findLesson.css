@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+	--coral-color: #f19066;
+	--orange-color: rgb(255, 185, 1);
+	--navy-color : #2F4858;
+	--ti-cursor-margin-left: 1em;
+	--ti-cursor-color: white;
+}
+.zindex{
+	z-index: 999;
+}
+*{
+	box-sizing: border-box;
+	font-family: 'GangwonEdu_OTFBoldA';
+}
+
+body{
+	height: 1600px;
+}
+ul,li{
+   list-style:none;
+}
+.liLists{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+li{
+	margin-bottom: 5px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+div{
+	transition: all 0.5s;
+}
+input{
+	caret-color: var(--orange-color);
+}
+.recruit{
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: var(--orange-color);
+	animation: blink-effect 3s ease-in-out infinite;
+}
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+.mainTitle{
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	color: var(--orange-color);
+}
+#searchTitle{
+	width: 100px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+#searchTitle:focus-within{
+	width: 200px;
+    transform: translateX(-12%);
+    transition: all 0.3s ease-in-out;
+}
+
+.searchFilter{
+	background-color: var(--orange-color);
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.searchBtn{
+	border: none;
+	border-radius: 10px;
+}
+.fa-magnifying-glass:hover{
+	cursor: pointer;
+}
+.filterBtns>button:hover{
+    scale: 1.1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.filterBtns>input{
+	
+}
+
+.slideToggle{
+	color: var(--orange-color);
+}
+.contentContainer{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+.filterBtns>button{
+	background-color: white;
+	margin: 10px;
+	width: 120px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+	color: var(--orange-color);
+}
+.leftCategory{
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+	height: 100%;
+}
+.leftCategory>div{
+	margin: 10px;
+}
+.leftCategory>div>ul>li:hover{
+	font-weight: 600;
+	cursor: pointer;
+}
+.lessonListBox{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 3rem;
+}
+/*.lessonListBox>div:hover{
+	scale: 1.02;
+	cursor: pointer;
+	transition: .5s;
+}*/
+.lessonListImageBox>img:hover{
+	scale: 1.1;
+	cursor: pointer;
+	transition: .5s;
+}
+.lessonList{
+	width: 200px;
+	height: 250px;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 5px;
+	position: relative;
+}
+.lessonListImageBox{
+	overflow: hidden;
+}
+.lessonListTitle{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 100%;
+}
+.lessonView{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.lessonView>i{
+	margin-left: 10px;
+}
+.lessonStars{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	color: coral;
+}
+.lessonStars>i{
+	margin-left: 10px;
+}
+.dropdown>button{
+	background-color: white;
+	margin: 0px;
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 10%;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+	color: var(--coral-color);
+}
+.slide{
+	height: 450px;
+	display: none;
+}
+.show{
+	border: none;
+}
+
+@keyframes slide_up{
+	0%{
+	  height:500px;
+	  
+	}
+	100%{
+	  height:0px;
+	}
+  }
+  
+  @keyframes slide_down{
+	0%{
+	  height:0px;
+	}
+	100%{
+	  height:500px;
+	}
+  }
+
+/*	체크박스디자인
+	li input[type="checkbox"] {
+	-webkit-appearance: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	outline: none !important;
+	border: 1px solid #9999;
+	vertical-align: auto;
+	margin-right: 5px;
+}
+li input[type="checkbox"]::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: scale(0) translate(-50%, -50%);
+    line-height: 1;
+}
+li input[type="checkbox"]:checked {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+    color: white;
+}
+li input[type="checkbox"]:checked::before {
+    border-radius: 4px;
+    transform: scale(1) translate(-50%, -50%)
+}*/
+.slideToggle{
+	color: var(--coral-color);
+	height: 45px;	
+	border-radius: 5px;
+	padding: 10px
+}
+.slideToggle>ul>li{
+	margin-bottom: 20px;
+}
+.page-link {
+  color: var(--coral-color); 
+  background-color: white;
+  border: 1px solid white; 
+}
+
+.page-item.active .page-link {
+ z-index: 1;
+ color: var(--coral-color); 
+ font-weight:bold;
+ background-color: white;
+ border-color: white;
+ 
+}
+.page-link:focus, .page-link:hover {
+  color: var(--coral-color);
+  background-color: white; 
+  border-color: white;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lessonListBox {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+} 
+@media (min-width: 575px) and (max-width: 992px){
+	.lessonListBox {
+		grid-template-columns: 1fr 1fr;
+	}
+} 
+@media (max-width: 575px){
+	.lessonListBox {
+		grid-template-columns: 1fr;
+	}
+} 
+
+

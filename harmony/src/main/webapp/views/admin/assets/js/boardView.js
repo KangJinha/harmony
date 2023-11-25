@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+$('button[name="editBtn"]').on('click',()=>{
+	location.href=editPath+"?no="+viewno;
+});
+$('button[name="deleteBtn"]').on('click',()=>{
+	location.href=deletePath+"?no="+viewno;
+});

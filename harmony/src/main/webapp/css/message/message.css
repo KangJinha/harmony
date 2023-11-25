@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.message.category-lesson {
+	border-radius: 9999px;
+	background-color: green;
+	color: ghostwhite;
+}
+.message.category-ensemble {
+	border-radius: 9999px;
+	background-color: darkorange;
+	color: ghostwhite;
+}
+.message.category-member {
+	border-radius: 9999px;
+	background-color: black;
+	color: ghostwhite;
+}
+.message.category-notice {
+	border-radius: 9999px;
+	background-color: darkred;
+	color: ghostwhite;
+}

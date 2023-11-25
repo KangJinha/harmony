@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+main{
+	display: flex;
+	height: 90vh;
+	font-family: 'Hi Melody', sans-serif;
+  	font-size: 23px;
+  	
+  	display: flex;
+  justify-content: space-between; 
+}
+
+section{
+	overflow: auto;
+	border: 1px solid #ddd;
+ 	background-color: #f9f9f9;
+ 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	justify-content : center;
+	width:36%;
+	height: 80vh;
+	margin: 3%;
+	padding-top: 25%;
+	padding-bottom: 10%;
+	margin-left: 25%;
+	
+	
+}
+
+.btn_container{
+	
+/*	border: 1px solid red;*/
+	margin-left : 70%;
+/*	margin-top : 10%;*/
+}
+
+aside{
+	height: 80vh;
+	margin:3%;
+	border: 1px solid #ddd;
+ 	background-color: #f9f9f9;
+ 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 20%;
+	
+}
+
+section > div{
+	margin: 15px;
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+
+
+.hr_container{
+	margin-left:26%;	
+}
+
+
+hr{
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px rgb(168, 168, 168) inset;
+	width: 70%;
+/*	margin: 0;*/
+}
+
+.profile_card{
+	margin : 5%;
+/*	border : 1px solid black;*/
+}
+
+
+input[type=button]{
+    cursor : pointer;
+    background-color:  rgb(218, 106, 65);
+    width: 120px;
+    height: 40px;
+    border: none;
+    color:white;
+    border-radius: 10%;
+}
+
+input[type=button]:hover{
+    cursor : pointer;
+    background-color: rgb(232, 72, 13);
+    width: 120px;
+    height: 40px;
+    border: none;
+    color:white;
+    border-radius: 10%;
+}

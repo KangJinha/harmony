@@ -1,0 +1,290 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	box-sizing: border-box;
+	font-family: 'GangwonEdu_OTFBoldA';
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-link{
+	color: rgba(0, 0, 0, 0.65);
+}
+:root{
+	--coral-color: #f19066;
+	--orange-color: rgb(255, 185, 1);
+	--navy-color : #2F4858;
+	--ti-cursor-margin-left: 1em;
+	--ti-cursor-color: white;
+}
+html,body{
+	height: 100%;
+}
+div{
+	transition: all 0.5s;
+}
+
+button:focus, .btn{ 	
+    border: none;
+    outline:none;
+}
+.btn-warning:not(li>a){
+	color: white;
+}
+.recruit{
+	color: var(--coral-color);
+	animation: blink-effect 1s step-end infinite;
+}
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+.upperBar {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--orange-color);
+}
+.upperBar>h2{
+	margin-top: 12px;
+}
+
+.cud>button{
+	color: var(--orange-color);
+	margin-left: 10px;
+}
+.category{
+	display: flex;
+}
+.category>input{
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+.category>input:first-child{
+	text-align: left;
+	width: 70px;
+}
+.category>input:last-child{
+	text-align: left;
+	width: 100px;
+}
+div{
+	border-radius: 5px;
+}
+button:hover{
+    scale: 1.02;
+}
+button{
+	cursor: pointer;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+}
+.submitContainer input[type=submit]{
+	border-radius: 5px;
+}
+.form-select{
+	width: 150px;
+	height: 35px;
+}
+.imgSubmitSection{
+	width: 100%;
+	margin: 2px;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.detailImg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.saveLessonPosition{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+.saveLesson{
+    will-change: transform;
+    /* 애니메이션을 안정적으로 보이도록 브라우저를 도와준다. */
+    /* 브라우저에게 어떤 것이 변할 것인지 예고해주는것 */
+    /* 그래픽 카드를 이용해서 애니메이션을 가속화 한다. */
+    animation: heartBeat 1s linear infinite;
+    cursor: pointer;
+}
+.detailImg>img{
+	padding: 5px;
+	margin: 5px;
+}
+.upperBar{
+	margin-bottom: 10px;
+}
+.upperBar>div>button{
+	width: 100px;
+	height: 40px;
+}
+.labelBox{
+	text-align: center;
+}
+.labelBox>label{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.lessonSubmit{
+	position : relative;
+	height: 100%;
+}
+select{
+	width: 75px;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+input[type=submit],input[type=button]{
+	position : absolute;
+	bottom : 3px;
+	width: 100%;
+	border: none;
+	/*box-shadow: rgba(240, 74, 74, 0.1) 0px 4px 12px;*/
+	cursor: pointer;
+	background-color: white;
+	height: 50px;
+	color: coral;
+}
+
+.reviewInfo{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	align-items: center;
+}
+
+.detailInfoBar{
+	height: 50px;
+	align-items: center;
+	z-index: 99;
+	background-color: white;
+	box-shadow: rgba(255, 185, 1, 0.1) 0px 4px 12px;
+	position: sticky;
+	top: 0px;
+	transition: 0.3s;
+}
+.detailInfoBar>button{
+	color: var(--orange-color);
+}
+/*.detailInfo{
+	height: 500px;
+	box-shadow: rgba(255, 185, 1, 0.1) 0px 4px 12px;
+	align-items: center;
+}*/
+.teacher-comment{
+	padding-left: 50px;
+	margin-bottom: 20px;
+}
+.teacher-comment>div>div>i{
+	color: coral;
+}
+
+.detailsContainer{
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.detailsContainer_title{
+	padding: 20px;
+	width: 20%;
+	height: 100%;
+}
+
+.detailsContainer_content{
+	padding: 20px;
+	width: 80%;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.detailsContainer_content>div{
+	display: flex;
+	justify-content: space-between;
+	margin: 5px;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #FAFAFC;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.detailsContainer_content div input{
+	cursor: default;
+}
+.detailsContainer_content-inputpost{
+	display: flex;
+	flex-direction: column;
+}
+.rewiewContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.avataMemberStarDate{
+	display: flex;
+	align-items: center;
+}
+.memberStarDate{
+	font-size: 0.8rem;
+	margin-left: 10px;
+}
+.starDate>i{
+	color: var(--coral-color);
+}
+
+@keyframes heartBeat {
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: var(--orange-color);
+        transform: scale(1.5);
+    }
+    100%{
+        color: white;
+        transform: none;
+    }
+}
+
+
+.upup{
+	position: sticky;
+	display: flex;
+	justify-content: right;
+	
+}
+.upup>i{
+	color: var(--coral-color);
+}
+.upup:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+}

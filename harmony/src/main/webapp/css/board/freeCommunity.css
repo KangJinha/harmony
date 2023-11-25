@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'iceHimchan-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceHimchan-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	font-family: 'iceHimchan-Rg';
+}
+/* 카테고리 전체 div  */
+.main {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 60px;
+    margin-top: 3%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.main-container{
+	width: 100%;
+}
+
+/*  게시판 목록 */
+.board {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 200px;
+}
+
+/* 정보게시판 자유게시판 DIV*/
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 200px;
+}
+
+.info-container > h3{
+	display: flex;
+	align-items: center;
+	height: 55px;
+}
+
+
+/* 게시판 부분 DIV */
+.info-container > h3 a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 18px; 
+    transition: all 0.3s ease; 
+}
+
+/* 정보 게시판 선택안되어 있을때*/
+.info-board{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+/* 자유게시판  */
+.free-board{
+	background-color: #FFFACD;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.notice-board{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+/* 게시판에 마우스올리면 호버효과 */
+.info-container > h3 a:hover {
+    color: #EC8F5E;
+    transform: scale(1.1); 
+}
+ 
+
+  
+
+
+/*글*/
+
+/* 전체 테이블 부분 패딩넣고 테두리 만들어서 쉐도우 효과 및 radius 효과 */
+.individual-post {
+    padding: 15px;
+    border-bottom: 2px solid #eaeaea;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    width: 70%;
+}
+
+/* 전체 테이블 호버 효과 */
+.individual-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* a 태그 밑줄 지우고 색깔 수정*/
+.post a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 카테고리 */
+.categorytag {
+    font-size: 14px;
+    color: #6c757d;
+    width: auto;
+}
+
+/* 게시글 메인 컨테이너 */
+.post-main {
+    display: flex;
+    justify-content: space-between; /* 요소들을 양 끝으로 정렬 */
+    align-items: center; /* 요소들을 세로 중앙에 정렬 */
+}
+
+/* 게시글 포함된 이미지 */
+.post-main img {
+    max-width: 150px;
+    height: auto;
+    margin-left: auto;
+    border-radius: 4px;
+}
+
+/* 게시글 제목 */
+.post-content h3 {
+    font-size: 20px;
+    color: #212529;
+    font-weight: 600;
+}
+
+/* 게시글 본문 */
+.post-content p {
+    font-size: 16px;
+    color: #495057;
+    margin-right: 20px;
+}
+
+/* 게시글 작성자 */
+.post-writer {
+    font-size: 14px;
+    color: #213b3b;
+    margin-top: 30px;
+}
+
+/* 게시글 지역 */
+.post-region {
+    font-size: 14px;
+    color: #adb5bd;
+}
+
+/* 게시글 아래 부분 */
+.post-footer {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* 뷰코멘트랑 작성일 부분 */
+.view-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* 뷰코멘트 부분 */
+.views-comments-container {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+}
+
+/* 코멘트수 */
+.post-comment {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #343a40;
+}
+
+/* 코멘트 이미지 */
+#commentIcon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle; 
+}
+
+/* 게시글 작성일 */
+.post-date {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+
+/* 필터 부분 */
+
+/* 기본 필터 스타일 */
+.filter div {
+    margin-bottom: 10px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px; /* 요소 간 간격 */
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* 셀렉트 박스 스타일 */
+.filter select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+/* 셀렉트 박스 호버 스타일 */
+.filter select:hover {
+    border-color: #888;
+}
+
+/* 셀렉트 박스 포커스 스타일 */
+.filter select:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/* 글쓰기 버튼 오른쪽으로 정렬 */
+.post-writer-button-div {
+    margin-left: auto;
+}
+
+/* 글쓰기버튼 */
+.post-writer-button{
+    font-size: 16px;
+    background-color:#EEF296;
+    color: #424242;
+    border-radius: 8px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+
+/* 코멘트 이미지 */
+.post-writer-button-div img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle; 
+}
+
+/* 검색 전체 폼 */
+.search-form {
+    width: 82%;
+    margin-top: 20px;
+}
+
+/*검색 유형 선택*/
+.search-select {
+    padding: 5px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: 5px;
+    height: 38px;
+}
+
+/*검색 내용*/
+.search-input {
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%; 
+    height: 35px;
+}
+
+/*검색버튼*/
+.search-button {
+    padding: 5px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #83A2FF; /* 주제색에 맞게 조정 */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 38px;
+    margin-left: 2px;
+}
+
+/*검색버튼 호버*/
+.search-button:hover {
+    background-color: #6289ff;
+}
+
+/*검색버튼 이미지*/
+.search-button img{
+    height: 20px;
+}
+
+/*페이지 부분*/
+.pagination-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 20px;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.pagination li {
+    margin-right: 5px;
+}
+
+.pagination li a, .pagination li span {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

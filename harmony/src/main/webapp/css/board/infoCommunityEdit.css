@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'iceHimchan-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceHimchan-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	font-family: 'iceHimchan-Rg';
+}
+/* 카테고리 전체 div  */
+.main {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 60px;
+    margin-top: 3%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.main-container{
+	width: 100%;
+}
+
+/*  게시판 목록 */
+.board {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 200px;
+}
+
+/* 정보게시판 자유게시판 DIV*/
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 200px;
+}
+
+.info-container > h3{
+	display: flex;
+	align-items: center;
+	height: 55px;
+}
+
+/* 게시판 부분 DIV */
+.info-container > h3 a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 18px; 
+    transition: all 0.3s ease; 
+}
+
+/* 정보 게시판 선택 백그라운드 */
+.info-board{
+    background-color: #FFFACD;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+/* 자유게시판 선택안되어 있을때 */
+.free-board{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.notice-board{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+/* 게시판에 마우스올리면 호버효과 */
+.info-container > h3 a:hover {
+    color: #EC8F5E;
+    transform: scale(1.1); 
+}
+ 
+ 
+ #postForm{
+	 width: 70%;
+ }
+
+  
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.info-container > h3 a {
+    text-decoration: none; 
+    color: #333; 
+    font-size: 18px; 
+    transition: all 0.3s ease; 
+}
+
+.info-board{
+    background-color: #FFFACD;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.free-board{
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+
+.write-title{
+	margin-top: 10px;
+    margin-bottom: 4px;
+    margin-left: 0%;
+}
+
+#post-title {
+    width: 100%;
+    padding: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    border: 1px solid #c2c2c2; 
+    margin-bottom: 8px;
+}
+
+.infopostwrite{
+    width: 100%;
+    border-bottom: 1.5px solid rgb(139, 139, 139); 
+    margin-bottom: 20px;
+}
+
+
+.form-field-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	gap: 8px;
+}
+
+.form-field1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c2c2c2;
+    width: 50%;
+
+}
+
+.form-field1 > select {
+    flex: 2;
+    padding: 5px;
+    font-size: 14px;
+    border: none; 
+	background-color: transparent; 
+    cursor:pointer;
+}
+
+.form-field2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c2c2c2;
+    width: 25%;
+
+}
+
+.form-field2 > select {
+    flex: 2;
+    padding: 5px;
+    font-size: 14px;
+    border: none; 
+	background-color: transparent;
+    cursor:pointer;
+}
+
+.form-field3 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c2c2c2;
+    width: 25%;
+
+}
+
+.form-field3 > select {
+    flex: 2;
+    padding: 5px;
+    font-size: 14px;
+    border: none; 
+	background-color: transparent;
+    cursor:pointer; 
+}
+
+.post-write{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.submit-post-button{
+    margin-top: 10px;
+    border: 1px solid #c2c2c2;
+    padding: 5px 10px;
+    width: 100px;
+    cursor:pointer;
+    background-color: #ffffff;
+}
+
+.post-submit{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+
+.post-attach{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+}
+.post-attach label {
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.post-input{
+    border: 1px solid #c2c2c2;
+    width: 100%;
+    padding: 5px;
+}
